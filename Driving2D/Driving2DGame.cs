@@ -64,8 +64,8 @@ namespace Driving2D
             spriteBatch = new SpriteBatch(GraphicsDevice);
             lapTimeFont = Content.Load<SpriteFont>("LapTimeFont");
             carTexture = Content.Load<Texture2D>("car");
-            carBrakingTexture = Content.Load<Texture2D>("car_braking");
-            track = Content.Load<Texture2D>("track2Bounds");
+            carBrakingTexture = Content.Load<Texture2D>("carBraking");
+            track = Content.Load<Texture2D>("simpleTrack");
             
             var trackBounds = Content.Load<Texture2D>("simpleTrackBounds");
             var checkPoints = JsonFileReader.ReadJson<List<float[]>>(@"Content\simpleTrackCheckpoints.json");
